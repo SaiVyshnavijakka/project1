@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <!--
+        <h1>if conditional statements</h1>
+        <h1>
+        {% if a > b %}
+            <h1>inside if block</h1>
+            <h1>{{a}} is greater than {{b}}</h1>
+        {% endif %}
+        </h1>      
+    </center>
+-->
+</body>
+</html>
+<!--
+<center>
+    <h1>if else conditional statements</h1>
+    <h1>
+        {% if a > b %}
+            <h1>inside if block</h1>
+            <h1>{{a}} is greater than {{b}}</h1>
+        {% else %}
+            <h1>inside else block</h1>
+            <h1>{{b}} is greater than {{a}}</h1>
+        {% endif %}
+        </h1> 
+</center>
+-->
+
+<!--
+<center>
+    <h1>if elif conditional statements</h1>
+    <h1>
+        {% if a > b  and b > c %}
+            <h1>inside if block</h1>
+            <h1>{{a}} is greater than {{b}},{{c}}</h1>
+        {% elif b > c %}
+            <h1>inside elif block</h1> 
+            <h1>{{b}} is greater than {{c}},{{a}}</h1>
+        {% else %}
+            <h1>inside else block</h1>
+            <h1>{{c}} is greater than {{a}},{{b}}</h1>
+        {% endif %}
+        </h1> 
+</center>-->
+
+<center>
+    <h1>nested if condition</h1>
+
+    <h1><a href="{% url 'loop' %}"> Go to loop page</a></h1>
+    <h1>
+        {% if a > b %}
+            {% if a > c %}
+
+            <h1> inside if block of outer if</h1>
+            <h1>{{a}} is greater than {{c}}</h1>
+
+            {% else %}
+
+            <h1> inside else block of outer if</h1>
+            <h1>{{c}} is greater than {{a}}</h1>
+
+            {% endif %}
+        
+        {% else %}
+              
+            {% if b > c %}
+
+            <h1> inside if block of outer else</h1>
+            <h1>{{b}} is greater than {{c}}</h1>
+
+            {% else %}
+
+            <h1> inside else block of outer else</h1>
+            <h1>{{c}} is greater than {{b}}</h1>
+
+            {% endif %}
+        
+        {% endif %}
+
+    </h1>
+</center>
